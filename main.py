@@ -1,10 +1,11 @@
+import os
 import telebot
 import logging
 import parser
 import random
 from random import randint
 from random import randrange
-TOKEN = "REMOVED_TOKEN"
+TOKEN = os.environ["BOT_TOKEN"]
 bot = telebot.TeleBot(TOKEN)
 APP_NAME = 'orthoepybot'
 from telebot import types
